@@ -19,6 +19,6 @@ There are many ways to host your project for free. recommend hosts are:
 
 **I have deployed this repo on `VERCEL`**
 
-- WEBSITE [Product preview card component](https://order-summary-component-blue-kappa.vercel.app/)
+- WEBSITE [Order summary card](https://order-summary-component-blue-kappa.vercel.app/)
 
 **Have fun building!** 🚀
