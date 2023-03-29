@@ -1,6 +1,6 @@
 :root {
   --clr-bg-100: hsl(225, 100%, 94%);
-  --clr-primary-200: hsl(230, 105%, 96%);
+  --clr-primary-200: hsl(230, 105%, 97%);
   --clr-primary-400: hsl(245, 75%, 52%);
   --clr-neutral-100: hsl(225, 100%, 98%);
   --clr-neutral-200: hsl(224, 23%, 55%);
@@ -65,21 +65,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+  background-image: url(/order-summary-component/images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: var(--clr-bg-100);
   padding: 1rem;
   font-family: var(--ff-red-hat);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 480px) {
   body {
-    background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-image: url(/order-summary-component/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    background-size: contain;
   }
+}
+@media only screen and (min-width: 375px) {
   .card__body .__order_summary {
     padding-inline: 1.2rem;
-    font-size: 0.75rem;
   }
   .__plan {
     padding: 0.5rem;
@@ -90,7 +93,7 @@ p {
   color: var(--clr-neutral-200);
 }
 
-h3,
+h1,
 h4 {
   color: var(--clr-neutral-400);
 }
@@ -100,6 +103,7 @@ h4 {
   overflow: hidden;
   border-radius: 1rem;
   background-color: var(--clr-neutral-100);
+  box-shadow: rgba(2, 2, 2, 0.4) 0px 10px 20px;
 }
 .card .card__body {
   display: grid;
@@ -110,6 +114,7 @@ h4 {
   row-gap: 1rem;
 }
 .card .card__body .__order_title {
+  font-size: 1.4rem;
   font-weight: var(--fw-900);
 }
 .card .card__body .__plan {
@@ -144,9 +149,15 @@ h4 {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  box-shadow: rgb(159, 178, 236) 0px 10px 20px;
+  transition: all 0.2s ease-out;
+}
+.card .card__body button:hover {
+  background-color: var(--clr-neutral-400);
+  scale: 1.05;
 }
 .card .card__body .__cncl_order {
   font-size: 0.8rem;
   font-weight: var(--fw-900);
   cursor: pointer;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
